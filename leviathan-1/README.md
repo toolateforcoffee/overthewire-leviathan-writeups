@@ -149,13 +149,13 @@ End of assembler dump.
 
   In this section some hex values are moved into specific memory points. By converting them into ascii characters we can see that:
 
-  `
+  ```text
   0x786573 -> sex
   0x72636573 -> secr --> secret
   0x746572 -> et ------|
   0x646f67 -> god
   0x65766f6c -> love
-  `
+  ```
   ## Third Section : The Three Characters
 
   ```nasm
@@ -250,7 +250,6 @@ End of assembler dump.
 
   system() is a function from the c standard library (lbc) that creates and manages processes. by doing system(command) it will create a child process, in particular it executes a shell and execute in it the command passed as parameter. Basically it does:
   /bin/sh -c "command"
-
 
   Basically, after entering the correct three characters as input we will get a sh shell, and will have the same privileges as the effective user, leviathan2:
 
