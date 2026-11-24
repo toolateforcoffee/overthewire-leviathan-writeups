@@ -34,71 +34,71 @@ leviathan1@leviathan:~$
 
 ```nasm
 Dump of assembler code for function main:
-   0x080491d6 <+0>:     lea    ecx,[esp+0x4]
-   0x080491da <+4>:     and    esp,0xfffffff0
-   0x080491dd <+7>:     push   DWORD PTR [ecx-0x4]
-   0x080491e0 <+10>:    push   ebp
-   0x080491e1 <+11>:    mov    ebp,esp
-   0x080491e3 <+13>:    push   ebx
-   0x080491e4 <+14>:    push   ecx
-   0x080491e5 <+15>:    sub    esp,0x20
-   0x080491e8 <+18>:    mov    eax,gs:0x14
-   0x080491ee <+24>:    mov    DWORD PTR [ebp-0xc],eax
-   0x080491f1 <+27>:    xor    eax,eax
-   0x080491f3 <+29>:    mov    DWORD PTR [ebp-0x20],0x786573
-   0x080491fa <+36>:    mov    DWORD PTR [ebp-0x13],0x72636573
-   0x08049201 <+43>:    mov    DWORD PTR [ebp-0x10],0x746572
-   0x08049208 <+50>:    mov    DWORD PTR [ebp-0x1c],0x646f67
-   0x0804920f <+57>:    mov    DWORD PTR [ebp-0x18],0x65766f6c
-   0x08049216 <+64>:    mov    BYTE PTR [ebp-0x14],0x0
-   0x0804921a <+68>:    sub    esp,0xc
-   0x0804921d <+71>:    push   0x804a008
-   0x08049222 <+76>:    call   0x8049050 <printf@plt>
-   0x08049227 <+81>:    add    esp,0x10
-   0x0804922a <+84>:    call   0x8049060 <getchar@plt>
-   0x0804922f <+89>:    mov    BYTE PTR [ebp-0x24],al
-   0x08049232 <+92>:    call   0x8049060 <getchar@plt>
-   0x08049237 <+97>:    mov    BYTE PTR [ebp-0x23],al
-   0x0804923a <+100>:   call   0x8049060 <getchar@plt>
-   0x0804923f <+105>:   mov    BYTE PTR [ebp-0x22],al
-   0x08049242 <+108>:   mov    BYTE PTR [ebp-0x21],0x0
-   0x08049246 <+112>:   sub    esp,0x8
-   0x08049249 <+115>:   lea    eax,[ebp-0x20]
-   0x0804924c <+118>:   push   eax
-   0x0804924d <+119>:   lea    eax,[ebp-0x24]
-   0x08049250 <+122>:   push   eax
-   0x08049251 <+123>:   call   0x8049030 <strcmp@plt>
-   0x08049256 <+128>:   add    esp,0x10
-   0x08049259 <+131>:   test   eax,eax
-   0x0804925b <+133>:   jne    0x8049288 <main+178>
-   0x0804925d <+135>:   call   0x8049080 <geteuid@plt>
-   0x08049262 <+140>:   mov    ebx,eax
-   0x08049264 <+142>:   call   0x8049080 <geteuid@plt>
-   0x08049269 <+147>:   sub    esp,0x8
-   0x0804926c <+150>:   push   ebx
-   0x0804926d <+151>:   push   eax
-   0x0804926e <+152>:   call   0x80490b0 <setreuid@plt>
-   0x08049273 <+157>:   add    esp,0x10
-   0x08049276 <+160>:   sub    esp,0xc
-   0x08049279 <+163>:   push   0x804a013
-   0x0804927e <+168>:   call   0x80490a0 <system@plt>
-   0x08049283 <+173>:   add    esp,0x10
-   0x08049286 <+176>:   jmp    0x8049298 <main+194>
-   0x08049288 <+178>:   sub    esp,0xc
-   0x0804928b <+181>:   push   0x804a01b
-   0x08049290 <+186>:   call   0x8049090 <puts@plt>
-   0x08049295 <+191>:   add    esp,0x10
-   0x08049298 <+194>:   mov    eax,0x0
-   0x0804929d <+199>:   mov    edx,DWORD PTR [ebp-0xc]
-   0x080492a0 <+202>:   sub    edx,DWORD PTR gs:0x14
-   0x080492a7 <+209>:   je     0x80492ae <main+216>
-   0x080492a9 <+211>:   call   0x8049070 <__stack_chk_fail@plt>
-   0x080492ae <+216>:   lea    esp,[ebp-0x8]
-   0x080492b1 <+219>:   pop    ecx
-   0x080492b2 <+220>:   pop    ebx
-   0x080492b3 <+221>:   pop    ebp
-   0x080492b4 <+222>:   lea    esp,[ecx-0x4]
-   0x080492b7 <+225>:   ret
+0x080491d6 <+0>:     lea    ecx,[esp+0x4]
+0x080491da <+4>:     and    esp,0xfffffff0
+0x080491dd <+7>:     push   DWORD PTR [ecx-0x4]
+0x080491e0 <+10>:    push   ebp
+0x080491e1 <+11>:    mov    ebp,esp
+0x080491e3 <+13>:    push   ebx
+0x080491e4 <+14>:    push   ecx
+0x080491e5 <+15>:    sub    esp,0x20
+0x080491e8 <+18>:    mov    eax,gs:0x14
+0x080491ee <+24>:    mov    DWORD PTR [ebp-0xc],eax
+0x080491f1 <+27>:    xor    eax,eax
+0x080491f3 <+29>:    mov    DWORD PTR [ebp-0x20],0x786573
+0x080491fa <+36>:    mov    DWORD PTR [ebp-0x13],0x72636573
+0x08049201 <+43>:    mov    DWORD PTR [ebp-0x10],0x746572
+0x08049208 <+50>:    mov    DWORD PTR [ebp-0x1c],0x646f67
+0x0804920f <+57>:    mov    DWORD PTR [ebp-0x18],0x65766f6c
+0x08049216 <+64>:    mov    BYTE PTR [ebp-0x14],0x0
+0x0804921a <+68>:    sub    esp,0xc
+0x0804921d <+71>:    push   0x804a008
+0x08049222 <+76>:    call   0x8049050 <printf@plt>
+0x08049227 <+81>:    add    esp,0x10
+0x0804922a <+84>:    call   0x8049060 <getchar@plt>
+0x0804922f <+89>:    mov    BYTE PTR [ebp-0x24],al
+0x08049232 <+92>:    call   0x8049060 <getchar@plt>
+0x08049237 <+97>:    mov    BYTE PTR [ebp-0x23],al
+0x0804923a <+100>:   call   0x8049060 <getchar@plt>
+0x0804923f <+105>:   mov    BYTE PTR [ebp-0x22],al
+0x08049242 <+108>:   mov    BYTE PTR [ebp-0x21],0x0
+0x08049246 <+112>:   sub    esp,0x8
+0x08049249 <+115>:   lea    eax,[ebp-0x20]
+0x0804924c <+118>:   push   eax
+0x0804924d <+119>:   lea    eax,[ebp-0x24]
+0x08049250 <+122>:   push   eax
+0x08049251 <+123>:   call   0x8049030 <strcmp@plt>
+0x08049256 <+128>:   add    esp,0x10
+0x08049259 <+131>:   test   eax,eax
+0x0804925b <+133>:   jne    0x8049288 <main+178>
+0x0804925d <+135>:   call   0x8049080 <geteuid@plt>
+0x08049262 <+140>:   mov    ebx,eax
+0x08049264 <+142>:   call   0x8049080 <geteuid@plt>
+0x08049269 <+147>:   sub    esp,0x8
+0x0804926c <+150>:   push   ebx
+0x0804926d <+151>:   push   eax
+0x0804926e <+152>:   call   0x80490b0 <setreuid@plt>
+0x08049273 <+157>:   add    esp,0x10
+0x08049276 <+160>:   sub    esp,0xc
+0x08049279 <+163>:   push   0x804a013
+0x0804927e <+168>:   call   0x80490a0 <system@plt>
+0x08049283 <+173>:   add    esp,0x10
+0x08049286 <+176>:   jmp    0x8049298 <main+194>
+0x08049288 <+178>:   sub    esp,0xc
+0x0804928b <+181>:   push   0x804a01b
+0x08049290 <+186>:   call   0x8049090 <puts@plt>
+0x08049295 <+191>:   add    esp,0x10
+0x08049298 <+194>:   mov    eax,0x0
+0x0804929d <+199>:   mov    edx,DWORD PTR [ebp-0xc]
+0x080492a0 <+202>:   sub    edx,DWORD PTR gs:0x14
+0x080492a7 <+209>:   je     0x80492ae <main+216>
+0x080492a9 <+211>:   call   0x8049070 <__stack_chk_fail@plt>
+0x080492ae <+216>:   lea    esp,[ebp-0x8]
+0x080492b1 <+219>:   pop    ecx
+0x080492b2 <+220>:   pop    ebx
+0x080492b3 <+221>:   pop    ebp
+0x080492b4 <+222>:   lea    esp,[ecx-0x4]
+0x080492b7 <+225>:   ret
 End of assembler dump.
 ```
 
